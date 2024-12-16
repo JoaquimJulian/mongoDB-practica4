@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practica4.Controllers.JuegosController">
+   <children>
+      <TableView fx:id="juegos" layoutX="14.0" layoutY="14.0" prefHeight="536.0" prefWidth="614.0">
+        <columns>
+          <TableColumn fx:id="titulo" prefWidth="129.60000896453857" text="Titulo" />
+          <TableColumn fx:id="genero" prefWidth="103.20004272460938" text="Genero" />
+            <TableColumn fx:id="precio" prefWidth="187.19993591308594" text="Precio" />
+            <TableColumn fx:id="fecha_lanzamiento" prefWidth="192.00003662109373" text="Fecha de lanzamiento" />
+        </columns>
+      </TableView>
+      <Button fx:id="crear" layoutX="635.0" layoutY="477.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0" text="Crear" />
+      <Button fx:id="editar" layoutX="635.0" layoutY="514.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0" text="Editar" />
+      <Button fx:id="eliminar" layoutX="768.0" layoutY="514.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0" text="Eliminar" />
+      <TextField fx:id="tituloTexto" layoutX="689.0" layoutY="67.0" />
+      <TextField fx:id="generoTexto" layoutX="690.0" layoutY="134.0" />
+      <TextField fx:id="precioTexto" layoutX="691.0" layoutY="208.0" prefHeight="26.0" prefWidth="72.0" />
+      <TextField fx:id="fechaLanzamiento" layoutX="693.0" layoutY="284.0" />
+      <Text layoutX="690.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="691.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Género:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="691.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Précio:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="691.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de lanzamiento:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="691.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar juego con el genero seleccionado:" wrappingWidth="188.19140625">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="generosCombo" layoutX="693.0" layoutY="386.0" prefWidth="150.0" />
+      <Button fx:id="eliminarGenero" layoutX="645.0" layoutY="428.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="246.0" text="Eliminar juegos con el genero seleccionado" />
+   </children>
+</AnchorPane>
